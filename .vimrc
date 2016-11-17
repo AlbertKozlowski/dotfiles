@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'ekalinin/Dockerfile.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -22,7 +23,9 @@ syntax enable
 colorscheme monokai
 
 let mapleader = ","
-nmap <F8> :NERDTreeToggle<cr>
+nmap <F8> :NERDTreeTabsToggle<cr>
 
 
 :set nu
+
+let g:nerdtree_tabs_open_on_console_startup=0
