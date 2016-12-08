@@ -15,6 +15,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'ervandew/supertab'
+Plugin 'vim-airline/vim-airline'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -28,4 +31,9 @@ nmap <F8> :NERDTreeTabsToggle<cr>
 
 :set nu
 
+" Make sure background is transparent
+hi Normal ctermbg=none
+highlight NonText ctermbg=none
+
 let g:nerdtree_tabs_open_on_console_startup=0
+let g:airline#extensions#tabline#enabled = 1
