@@ -1,0 +1,26 @@
+[global_config]
+  borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  handle_size = 5
+  suppress_multiple_term_dialog = True
+  title_inactive_bg_color = "#7f3023"
+  title_inactive_fg_color = "#e3e3e3"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#262626"
+    background_darkness = 0.83
+    background_image = None
+    background_type = transparent
+    font = Monospace 10
+    foreground_color = "#ffffff"
+    use_system_font = False
